@@ -11,6 +11,7 @@ namespace BO.Interface
     public interface IDbEntity
     {
         [Key] 
+        [Unsigned]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         long? Id { get; set; }
   

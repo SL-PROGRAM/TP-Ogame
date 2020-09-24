@@ -6,14 +6,17 @@ using System.Web;
 
 namespace BO.Entity
 {
-    public abstract class Building : IDbEntity
+    public abstract class Building : IDbEntity, INamableEntity
     {
         private long? id;
-        public string name { get; set; }
-        public int? level { get; set; }
         public long? Id { get => id; set => id = value; }
 
-        public abstract int? CellNB();
+        private string name;
+        public string Name { get => name; set => name = value; }
+
+        public uint? level { get; set; }
+
+        public abstract uint? CellNB();
 
         public List<Ressource> TotalCost()
         {

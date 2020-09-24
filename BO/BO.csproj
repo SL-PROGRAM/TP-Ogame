@@ -49,6 +49,7 @@
     <Compile Include="Entity\RessourceGenerator.cs" />
     <Compile Include="Entity\SolarSystem.cs" />
     <Compile Include="Interface\IDbEntity.cs" />
+    <Compile Include="Interface\INamableEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
