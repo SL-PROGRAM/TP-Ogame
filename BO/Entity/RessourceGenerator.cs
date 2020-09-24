@@ -7,7 +7,7 @@ namespace BO.Entity
 {
     public abstract class RessourceGenerator : Building
     {
-        public List<Ressource> RessourceBySecond()
+        public virtual List<Ressource> RessourceBySecond()
         {
             return null;
         }

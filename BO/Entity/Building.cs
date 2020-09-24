@@ -14,9 +14,9 @@ namespace BO.Entity
         private string name;
         public string Name { get => name; set => name = value; }
 
-        public uint? level { get; set; }
+        public uint? Level { get; set; }
 
-        public abstract uint? CellNB();
+        public uint? CellNB { get => Level + 1 ; }
 
         public List<Ressource> TotalCost()
         {
