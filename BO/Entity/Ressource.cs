@@ -13,10 +13,9 @@ namespace BO.Entity
         private long? id;
         private string name;
         public string Name { get => name; set => name = value; }
-        private uint? lastQuantity { get; set; }
-
+        public uint LastQuantity { get; set; }
         [LastUpdateValidator]
-        private DateTime lastUpdate { get; set; }
+        public DateTime LastUpdate { get; set; }
         public long? Id { get => id; set => id = value; }
 
     }

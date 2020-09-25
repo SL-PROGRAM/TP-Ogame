@@ -14,19 +14,14 @@ namespace BO.Entity
         private string name;
         public string Name { get => name; set => name = value; }
 
-        public uint? Level { get; set; }
+        public uint Level { get; set; }
 
-        public uint? CellNB { get => Level + 1 ; }
+        public uint CellNB { get => Level ; }
 
-        public List<Ressource> TotalCost()
-        {
-            return null;
-        }
 
-        public List<Ressource> NextCost()
-        {
-            return null;
-        }
+        public virtual List<Ressource> TotalCost { get; }
+
+        public virtual List<Ressource> NextCost { get; }
 
 
     }
